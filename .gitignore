@@ -12,8 +12,6 @@
 hs_err_pid*
 
 *.idea
-*.mvn
 *.iml
 *.cmd
 *.exe
-*/target
