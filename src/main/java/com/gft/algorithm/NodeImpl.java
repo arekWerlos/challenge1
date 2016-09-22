@@ -17,6 +17,16 @@ public final class NodeImpl implements Node {
 
     @Override
     public Iterator<Node> iterator() {
-        return childrenList.iterator();
+        return new Iterator<Node>() {
+            @Override
+            public boolean hasNext() {
+                return childrenList.iterator().hasNext();
+            }
+
+            @Override
+            public Node next() {
+                return childrenList.iterator().next();
+            }
+        };
     }
 }

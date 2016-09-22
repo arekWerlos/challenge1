@@ -6,7 +6,7 @@ package com.gft.algorithm;
 public final class NodeSupport {
 
     public static Iterable<Node> convert(Node root) {
-        return null;
+        return root;
     }
 
 }
